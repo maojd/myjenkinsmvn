@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.mytest</groupId>
+	<artifactId>myjenkinsmvn</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>MyJenkinsMvnWebTest</name>
+	<description>Jenkins自动化部署测试</description>
+
+	<properties>
+		<pro.outerDirectory>src/main/webapp</pro.outerDirectory>
+		<!-- <pro.outerDirectory>WebContent</pro.outerDirectory> -->
+		<!-- <glassfish.embedded-static-shell.jar>D:/glassfish-4.1/glassfish4/glassfish/lib/embedded/glassfish-embedded-static-shell.jar</glassfish.embedded-static-shell.jar> -->
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>4.0.0-b01</version>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<sourceDirectory>src.main.java</sourceDirectory>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>**/*</include>
+				</includes>
+			</resource>
+		</resources>
+
+		<outputDirectory>target/myjenkinsmvn/WEB-INF/classes</outputDirectory>
+		<testOutputDirectory>target/test-classes</testOutputDirectory>
+		<finalName>myjenkinsmvn</finalName>
+	</build>
+
+	<packaging>war</packaging>
+</project>
