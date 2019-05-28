@@ -12,6 +12,11 @@
 <body>
 	web index page xxxxxxxx. test test. update1 test
 
+	xiufu le  yige da bug
+	<input type="text" value="username">
+	<br>
+	<input type="text" value="password">
+	<button>login </button>
 	<br>
 	<a href="./HelloServlet">jump hellow page test</a>
 
