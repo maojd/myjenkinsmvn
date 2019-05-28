@@ -10,7 +10,7 @@
 <script type="text/javascript" src="app/app.js"></script>
 </head>
 <body>
-	web index page xxxxxxxx. test test
+	web index page xxxxxxxx. test test. update1 test
 
 	<br>
 	<a href="./HelloServlet">jump hellow page test</a>
